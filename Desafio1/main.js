@@ -1,11 +1,10 @@
 // Realizar una clase “ProductManager” que gestione un conjunto de productos.
 class ProductManager {
+  static id = 0;
   constructor() {
     this.products = []; // constructor con el elemento products, el cual será un arreglo vacío
-    this.idCounter = 1; // contador de ID en 1
   }
-
-  // método “addProduct” el cual agregará un producto al arreglo de productos inicial
+  // Método “addProduct” el cual agregará un producto al arreglo de productos inicial
   addProduct(title, description, price, thumbnail, code, stock) {
     // Validar que no se repita el campo “code” y que todos los campos sean obligatorios
     if (
@@ -23,19 +22,17 @@ class ProductManager {
       console.log("El código ya existe para otro producto.");
       return;
     }
-
     // Al agregarlo, debe crearse con un id autoincrementable
-    const product = {
-      id: this.idCounter++,
-      title,
+    ProductManager.id++;
+    this.products.push({
+      id: title,
       description,
       price,
       thumbnail,
       code,
       stock,
-    };
-
-    this.products.push(product);
+      id: ProductManager.id,
+    });
   }
 
   // Método “getProducts” el cual debe devolver el arreglo con todos los productos creados hasta ese momento
@@ -57,8 +54,13 @@ class ProductManager {
 const product = new ProductManager();
 
 product.addProduct("producto1", "Descripción", 123, "imagen1.jpg", "P123", 100);
-product.addProduct("producto2", "Descripción", 345, "imagen2.jpg", "P124", 50);
+product.addProduct("producto2", "Descripción", 345, "imagen3.jpg", "P124", 1);
 
-console.log(product.getProducts());
+console.log(product.getProducts()); // Retorna todo
 console.log(product.getProductById(2)); // Encuentra el producto con ID 2
 console.log(product.getProductById(3)); // Not Found
+
+console.log("------------------------------------");
+
+product.addProduct("producto3", "Descripción", 567, "imagen3.jpg", "P124", 1); // codigo ya existe
+product.addProduct("producto4", "Descripción", 789); // faltan campos
