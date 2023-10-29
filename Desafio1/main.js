@@ -16,11 +16,9 @@ class ProductManager {
       stock === undefined
     ) {
       console.log("Todos los campos son obligatorios.");
-      return;
     }
     if (this.products.some((product) => product.code === code)) {
       console.log("El código ya existe para otro producto.");
-      return;
     }
     // Al agregarlo, debe crearse con un id autoincrementable
     ProductManager.id++;
@@ -56,11 +54,14 @@ const product = new ProductManager();
 product.addProduct("producto1", "Descripción", 123, "imagen1.jpg", "P123", 100);
 product.addProduct("producto2", "Descripción", 345, "imagen3.jpg", "P124", 1);
 
+console.log("Todos los productos: ");
 console.log(product.getProducts()); // Retorna todo
+
+console.log("Producto especifico: ")
 console.log(product.getProductById(2)); // Encuentra el producto con ID 2
 console.log(product.getProductById(3)); // Not Found
 
-console.log("------------------------------------");
+console.log("-------------------------------------------------------------------------------------");
 
-product.addProduct("producto3", "Descripción", 567, "imagen3.jpg", "P124", 1); // codigo ya existe
-product.addProduct("producto4", "Descripción", 789); // faltan campos
+product.addProduct("producto3", "Descripción", 567, "imagen3.jpg", "P124", 1); // Codigo ya existe
+product.addProduct("producto4", "Descripción", 789); // Faltan campos
