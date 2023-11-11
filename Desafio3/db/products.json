@@ -1,0 +1,93 @@
+[
+    {
+      "title": "Zapatillas Deportivas",
+      "description": "Zapatillas deportivas negras ideales para correr y entrenar.",
+      "price": 200,
+      "thumbnail": "imagen1.jpg",
+      "code": "ABC123",
+      "stock": 25,
+      "id": 1
+    },
+    {
+      "title": "Laptop Ultradelgada",
+      "description": "Laptop ultradelgada con pantalla HD y procesador rápido.",
+      "price": 150,
+      "thumbnail": "imagen2.jpg",
+      "code": "DEF456",
+      "stock": 30,
+      "id": 2
+    },
+    {
+      "title": "Smartphone de Última Generación",
+      "description": "Smartphone de última generación con cámara de alta resolución.",
+      "price": 180,
+      "thumbnail": "imagen3.jpg",
+      "code": "GHI789",
+      "stock": 20,
+      "id": 3
+    },
+    {
+      "title": "Televisor LED 4K",
+      "description": "Televisor LED 4K con sonido envolvente para una experiencia cinematográfica.",
+      "price": 220,
+      "thumbnail": "imagen4.jpg",
+      "code": "JKL012",
+      "stock": 15,
+      "id": 4
+    },
+    {
+      "title": "Cámara DSLR Profesional",
+      "description": "Cámara DSLR profesional con múltiples modos de disparo y enfoque automático.",
+      "price": 250,
+      "thumbnail": "imagen5.jpg",
+      "code": "MNO345",
+      "stock": 22,
+      "id": 5
+    },
+    {
+      "title": "Auriculares Inalámbricos",
+      "description": "Auriculares inalámbricos con cancelación de ruido y batería de larga duración.",
+      "price": 170,
+      "thumbnail": "imagen6.jpg",
+      "code": "PQR678",
+      "stock": 18,
+      "id": 6
+    },
+    {
+      "title": "Robot Aspiradora Inteligente",
+      "description": "Robot aspiradora inteligente con mapeo y programación automática.",
+      "price": 190,
+      "thumbnail": "imagen7.jpg",
+      "code": "STU901",
+      "stock": 27,
+      "id": 7
+    },
+    {
+      "title": "Tablet con Pantalla Retina",
+      "description": "Tablet con pantalla retina de alta resolución y procesador potente.",
+      "price": 210,
+      "thumbnail": "imagen8.jpg",
+      "code": "VWX234",
+      "stock": 12,
+      "id": 8
+    },
+    {
+      "title": "Aspiradora Robotizada",
+      "description": "Aspiradora robotizada con sensores de obstáculos y sistema de succión potente.",
+      "price": 230,
+      "thumbnail": "imagen9.jpg",
+      "code": "YZA567",
+      "stock": 24,
+      "id": 9
+    },
+    {
+      "title": "Smartwatch Fitness",
+      "description": "Smartwatch fitness con monitor de actividad y pulsómetro integrado.",
+      "price": 200,
+      "thumbnail": "imagen10.jpg",
+      "code": "BCD890",
+      "stock": 28,
+      "id": 10
+    }
+  ]
+  
