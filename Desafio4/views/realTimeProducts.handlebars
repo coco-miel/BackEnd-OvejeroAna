@@ -1,0 +1,58 @@
+<h1>Añadir un producto</h1>
+
+<form>
+  <div class="mb-3">
+    <label for="title" class="form_label">Titulo</label>
+    <input type="text" class="form_input" id="title" />
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form_label">Descripcion</label>
+    <input type="text" class="form_input" id="description" />
+  </div>
+  <div class="mb-3">
+    <label for="code" class="form_label">Codigo</label>
+    <input type="text" class="form_input" id="code" />
+  </div>
+  <div class="mb-3">
+    <label for="price" class="form_label">Precio</label>
+    <input type="number" class="form_input" id="price" />
+  </div>
+  <div class="mb-3">
+    <label for="stock" class="form_label">Stock</label>
+    <input type="number" class="form_input" id="stock" />
+  </div>
+  <div class="mb-3">
+    <label for="category" class="form_label">Categoria</label>
+    <input type="text" class="form_input" id="category" />
+  </div>
+  <div class="mb-3">
+    <label for="thumbnails" class="form_label">Imagen</label>
+    <input type="text" class="form_input" id="thumbnails" />
+  </div>
+
+  <button type="submit" class="btn btn-primary">Crear producto</button>
+</form>
+
+<h2>Productos actualizados en tiempo real: </h2>
+
+<div class="product-container">
+  <div class="product-list">
+    <!-- productos con card-->
+  </div>
+</div>
+
+<a href="/"><button class="btn btn-primary">Ir a Home</button></a>
+<script
+  src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.all.min.js
+"
+></script>
+<link
+  href="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css
+"
+  rel="stylesheet"
+/>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/static/js/home.handlebars.js"></script>
+<script src="/static/js/realTimeProducts.client.js"></script>

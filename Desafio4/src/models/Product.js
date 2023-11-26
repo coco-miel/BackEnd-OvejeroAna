@@ -38,6 +38,9 @@ export function notNegative(value) {
 }
 
 export function formatThumbnails(thumbnails) {
+  if (typeof thumbnails === "string") {
+    return [thumbnails]; // Convertir a array
+  }
   if (!Array.isArray(thumbnails)) {
     throw new Error("Thumbnails solo puede ser un array");
   }
